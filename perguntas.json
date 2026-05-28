@@ -1,0 +1,1960 @@
+{
+    "parte1": [
+        {
+            "pergunta": "Uma empresa deseja executar aplicações isoladas consumindo poucos recursos e compartilhando o kernel do sistema operacional. Qual tecnologia é mais indicada?",
+            "alternativas": [
+                "Máquina Virtual",
+                "Docker Container",
+                "BIOS",
+                "Hypervisor Tipo 1"
+            ],
+            "correta": 1,
+            "explicacao": "Containers Docker compartilham o kernel do host, consumindo menos recursos que máquinas virtuais.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual tipo de hypervisor funciona diretamente sobre o hardware físico sem depender de um sistema operacional host?",
+            "alternativas": [
+                "Tipo 2",
+                "VirtualBox",
+                "Tipo 1",
+                "Docker"
+            ],
+            "correta": 2,
+            "explicacao": "Hypervisores Tipo 1 rodam diretamente no hardware, como VMware ESXi e Hyper-V.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual comando exibe apenas os containers ativos em execução no Docker?",
+            "alternativas": [
+                "docker images",
+                "docker ps",
+                "docker rm",
+                "docker stop"
+            ],
+            "correta": 1,
+            "explicacao": "O comando docker ps lista os containers atualmente em execução.",
+            "tema": "docker",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Antes de executar um container, é necessário baixar sua imagem. Qual comando realiza essa tarefa?",
+            "alternativas": [
+                "docker pull",
+                "docker ps",
+                "docker exec",
+                "docker bash"
+            ],
+            "correta": 0,
+            "explicacao": "docker pull baixa imagens do Docker Hub ou de outro repositório.",
+            "tema": "docker",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual tecnologia virtualiza um sistema operacional completo, incluindo kernel próprio?",
+            "alternativas": [
+                "Docker",
+                "Container",
+                "VM",
+                "Shell"
+            ],
+            "correta": 2,
+            "explicacao": "Máquinas Virtuais possuem sistema operacional próprio e maior isolamento.",
+            "tema": "virtualizacao",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "O VirtualBox é classificado como:",
+            "alternativas": [
+                "Hypervisor Tipo 1",
+                "Container",
+                "Hypervisor Tipo 2",
+                "Kernel Linux"
+            ],
+            "correta": 2,
+            "explicacao": "VirtualBox depende de um sistema operacional host para funcionar.",
+            "tema": "virtualizacao",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "O modelo IaaS oferece ao usuário principalmente:",
+            "alternativas": [
+                "Infraestrutura virtualizada",
+                "Software pronto",
+                "Aplicativos de escritório",
+                "Containers prontos"
+            ],
+            "correta": 0,
+            "explicacao": "IaaS fornece infraestrutura como servidores, redes e armazenamento.",
+            "tema": "cloud",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "No modelo SaaS, qual é a principal responsabilidade do usuário?",
+            "alternativas": [
+                "Gerenciar hardware",
+                "Configurar hypervisores",
+                "Utilizar o software",
+                "Instalar sistema operacional"
+            ],
+            "correta": 2,
+            "explicacao": "No SaaS o usuário apenas utiliza o software pronto pela internet.",
+            "tema": "cloud",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual comando executa um container em modo interativo permitindo acesso ao terminal?",
+            "alternativas": [
+                "docker ps",
+                "docker run -it",
+                "docker stop",
+                "docker host"
+            ],
+            "correta": 1,
+            "explicacao": "O parâmetro -it permite interação direta com o terminal do container.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual componente é responsável por criar e gerenciar máquinas virtuais?",
+            "alternativas": [
+                "Shell",
+                "Kernel",
+                "Hypervisor",
+                "Docker Hub"
+            ],
+            "correta": 2,
+            "explicacao": "O hypervisor é responsável pela virtualização das VMs.",
+            "tema": "virtualizacao",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "O significado correto da sigla PaaS é:",
+            "alternativas": [
+                "Platform as a Service",
+                "Program as a Service",
+                "Public as a Service",
+                "Power as a Service"
+            ],
+            "correta": 0,
+            "explicacao": "PaaS fornece uma plataforma pronta para desenvolvimento e deploy.",
+            "tema": "cloud",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual modelo de computação em nuvem entrega aplicações prontas pela internet?",
+            "alternativas": [
+                "IaaS",
+                "PaaS",
+                "SaaS",
+                "FaaS"
+            ],
+            "correta": 2,
+            "explicacao": "SaaS fornece softwares completos acessados pela internet.",
+            "tema": "cloud",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual comando remove containers no Docker?",
+            "alternativas": [
+                "docker ps",
+                "docker rm",
+                "docker exec",
+                "docker list"
+            ],
+            "correta": 1,
+            "explicacao": "docker rm remove containers existentes.",
+            "tema": "docker",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Comparando VMs e Containers Docker, qual normalmente consome menos recursos?",
+            "alternativas": [
+                "VM",
+                "Docker Container",
+                "Hypervisor",
+                "BIOS"
+            ],
+            "correta": 1,
+            "explicacao": "Containers são mais leves pois compartilham o kernel do host.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Em virtualização, o termo 'host' representa:",
+            "alternativas": [
+                "Máquina principal",
+                "Container",
+                "Aplicação",
+                "Imagem Docker"
+            ],
+            "correta": 0,
+            "explicacao": "Host é a máquina física ou principal que executa VMs ou containers.",
+            "tema": "virtualizacao",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Uma empresa deseja reduzir o consumo de recursos mantendo isolamento entre aplicações. Porém, ela precisa iniciar serviços rapidamente em segundos. Qual solução é mais apropriada?",
+            "alternativas": [
+                "Máquinas Virtuais",
+                "Docker Containers",
+                "Dual Boot",
+                "BIOS"
+            ],
+            "correta": 1,
+            "explicacao": "Containers iniciam muito mais rapidamente e consomem menos recursos que VMs.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual característica diferencia principalmente containers Docker de máquinas virtuais?",
+            "alternativas": [
+                "Containers utilizam hardware dedicado",
+                "VMs compartilham kernel",
+                "Containers compartilham kernel do host",
+                "VMs não utilizam sistema operacional"
+            ],
+            "correta": 2,
+            "explicacao": "Containers compartilham o kernel do sistema operacional host.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Um administrador executou 'docker ps' e nenhum container apareceu, mas ele sabe que existem containers parados. Qual comando deveria usar?",
+            "alternativas": [
+                "docker images",
+                "docker list",
+                "docker ps -a",
+                "docker stop"
+            ],
+            "correta": 2,
+            "explicacao": "docker ps -a mostra containers ativos e parados.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual serviço de nuvem permite ao usuário apenas utilizar aplicações prontas sem gerenciar infraestrutura?",
+            "alternativas": [
+                "IaaS",
+                "PaaS",
+                "SaaS",
+                "Hypervisor"
+            ],
+            "correta": 2,
+            "explicacao": "No SaaS o usuário apenas consome o software.",
+            "tema": "cloud",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual opção representa um exemplo de Hypervisor Tipo 1?",
+            "alternativas": [
+                "Docker Desktop",
+                "VirtualBox",
+                "VMware ESXi",
+                "Ubuntu"
+            ],
+            "correta": 2,
+            "explicacao": "VMware ESXi roda diretamente no hardware.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "No Docker, imagens são:",
+            "alternativas": [
+                "Containers em execução",
+                "Modelos usados para criar containers",
+                "Hypervisores",
+                "Sistemas operacionais físicos"
+            ],
+            "correta": 1,
+            "explicacao": "Imagens servem como base para criação dos containers.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual modelo cloud fornece ambiente pronto para desenvolvimento e deploy de aplicações?",
+            "alternativas": [
+                "SaaS",
+                "PaaS",
+                "IaaS",
+                "FaaS"
+            ],
+            "correta": 1,
+            "explicacao": "PaaS entrega plataforma pronta para desenvolvimento.",
+            "tema": "cloud",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Ao utilizar Docker em Linux, qual componente do sistema operacional é compartilhado pelos containers?",
+            "alternativas": [
+                "BIOS",
+                "CPU",
+                "Kernel",
+                "Hypervisor"
+            ],
+            "correta": 2,
+            "explicacao": "Containers compartilham o kernel do host.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa apresenta uma desvantagem das máquinas virtuais comparadas aos containers?",
+            "alternativas": [
+                "Maior consumo de recursos",
+                "Menor isolamento",
+                "Ausência de sistema operacional",
+                "Dependência de internet"
+            ],
+            "correta": 0,
+            "explicacao": "VMs exigem mais memória e processamento.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual comando Docker é utilizado para interromper um container em execução?",
+            "alternativas": [
+                "docker stop",
+                "docker halt",
+                "docker pause",
+                "docker remove"
+            ],
+            "correta": 0,
+            "explicacao": "docker stop encerra um container ativo.",
+            "tema": "docker",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Uma empresa deseja máxima performance e acesso direto ao hardware físico para virtualização. Qual solução é mais indicada?",
+            "alternativas": [
+                "Hypervisor Tipo 2",
+                "Docker",
+                "Hypervisor Tipo 1",
+                "Shell Script"
+            ],
+            "correta": 2,
+            "explicacao": "Hypervisores Tipo 1 possuem melhor desempenho por rodarem direto no hardware.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente a ordem do menor para o maior nível de abstração?",
+            "alternativas": [
+                "Hardware → Hypervisor → VM",
+                "VM → Hardware → Kernel",
+                "Docker → BIOS → CPU",
+                "Kernel → Hardware → Hypervisor"
+            ],
+            "correta": 0,
+            "explicacao": "O hardware físico sustenta o hypervisor, que cria as máquinas virtuais.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual comando Docker remove uma imagem armazenada localmente?",
+            "alternativas": [
+                "docker delete",
+                "docker image rm",
+                "docker remove",
+                "docker kill"
+            ],
+            "correta": 1,
+            "explicacao": "docker image rm remove imagens locais.",
+            "tema": "docker",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "No modelo IaaS, quem normalmente é responsável por instalar e gerenciar o sistema operacional?",
+            "alternativas": [
+                "Usuário",
+                "Fornecedor da nuvem",
+                "Docker",
+                "Hypervisor"
+            ],
+            "correta": 0,
+            "explicacao": "No IaaS o usuário gerencia sistema operacional e aplicações.",
+            "tema": "cloud",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual característica faz containers serem muito utilizados em microsserviços?",
+            "alternativas": [
+                "Grande consumo de hardware",
+                "Inicialização rápida e leveza",
+                "Necessidade de BIOS dedicada",
+                "Dependência de VMs"
+            ],
+            "correta": 1,
+            "explicacao": "Containers são leves e rápidos, ideais para microsserviços.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual conceito permitiu que vários usuários/processos compartilhassem o tempo de CPU, dando origem à ideia moderna de virtualização?",
+            "alternativas": [
+                "Docker Swarm",
+                "Time Sharing",
+                "SaaS",
+                "Dockerfile"
+            ],
+            "correta": 1,
+            "explicacao": "Time Sharing é o compartilhamento do tempo de processamento, permitindo melhor aproveitamento da CPU.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Mainframes são conhecidos principalmente por:",
+            "alternativas": [
+                "Baixa disponibilidade",
+                "Uso apenas doméstico",
+                "Alta disponibilidade e processamento em larga escala",
+                "Substituir containers"
+            ],
+            "correta": 2,
+            "explicacao": "Mainframes são usados em ambientes críticos, como bancos e grandes empresas, por sua alta confiabilidade.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "O que significa VMM no contexto de virtualização?",
+            "alternativas": [
+                "Virtual Memory Module",
+                "Virtual Machine Monitor",
+                "Virtual Mainframe Manager",
+                "Volume Management Mode"
+            ],
+            "correta": 1,
+            "explicacao": "VMM significa Virtual Machine Monitor, outro nome associado ao hypervisor.",
+            "tema": "virtualizacao",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual módulo do hypervisor é responsável por redirecionar instruções emitidas pelas VMs?",
+            "alternativas": [
+                "Allocator",
+                "Interpreter",
+                "Dispatcher",
+                "Docker Engine"
+            ],
+            "correta": 2,
+            "explicacao": "O dispatcher redireciona instruções da VM para os módulos responsáveis.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual módulo do hypervisor decide quais recursos serão fornecidos para uma máquina virtual?",
+            "alternativas": [
+                "Allocator",
+                "Dispatcher",
+                "Registry",
+                "Compose"
+            ],
+            "correta": 0,
+            "explicacao": "O allocator é responsável por alocar recursos como CPU, memória, disco e rede.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "O módulo interpreter do hypervisor atua principalmente quando:",
+            "alternativas": [
+                "Um container baixa imagem",
+                "Uma VM executa instruções privilegiadas",
+                "Um usuário acessa SaaS",
+                "Uma imagem recebe uma tag"
+            ],
+            "correta": 1,
+            "explicacao": "O interpreter interpreta instruções privilegiadas executadas pelas máquinas virtuais.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "ISA, em virtualização, está relacionada a:",
+            "alternativas": [
+                "Interface entre software e hardware",
+                "Sistema de arquivos Docker",
+                "Modelo SaaS",
+                "Registro Docker Hub"
+            ],
+            "correta": 0,
+            "explicacao": "ISA define o conjunto de instruções, registradores, memória e operações que conectam software e hardware.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual é um problema comum da virtualização por hardware?",
+            "alternativas": [
+                "Ausência total de isolamento",
+                "Execução direta e irrestrita de instruções privilegiadas pelo guest",
+                "Necessidade de lidar com isolamento e instruções privilegiadas",
+                "Impossibilidade de usar sistemas operacionais diferentes"
+            ],
+            "correta": 2,
+            "explicacao": "A virtualização precisa garantir isolamento entre VMs e controlar instruções privilegiadas por segurança.",
+            "tema": "virtualizacao",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Docker Compose é usado principalmente para:",
+            "alternativas": [
+                "Criar máquinas virtuais",
+                "Gerenciar múltiplos containers por meio de um arquivo de configuração",
+                "Substituir o kernel do Linux",
+                "Criar hypervisors"
+            ],
+            "correta": 1,
+            "explicacao": "Docker Compose permite definir e executar aplicações com vários containers, geralmente usando docker-compose.yml.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual arquivo normalmente é usado pelo Docker Compose?",
+            "alternativas": [
+                "docker-compose.yml",
+                "index.html",
+                "kernel.conf",
+                "vmware.iso"
+            ],
+            "correta": 0,
+            "explicacao": "O docker-compose.yml define serviços, redes, volumes e configurações dos containers.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Docker Swarm é uma ferramenta voltada para:",
+            "alternativas": [
+                "Orquestração de containers em cluster",
+                "Edição de imagens",
+                "Criação de sistemas operacionais",
+                "Gerenciamento de senhas"
+            ],
+            "correta": 0,
+            "explicacao": "Docker Swarm permite distribuir e gerenciar containers em múltiplos nós de um cluster.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Na arquitetura do Docker Swarm, qual papel coordena o cluster?",
+            "alternativas": [
+                "Worker",
+                "Manager",
+                "Guest",
+                "Registry"
+            ],
+            "correta": 1,
+            "explicacao": "O nó Manager coordena o cluster, enquanto Workers executam as tarefas/containers.",
+            "tema": "docker",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Dockerfile é:",
+            "alternativas": [
+                "Um arquivo com instruções para construir uma imagem Docker",
+                "Um container em execução",
+                "Um tipo de hypervisor",
+                "Um serviço SaaS"
+            ],
+            "correta": 0,
+            "explicacao": "Dockerfile contém comandos como FROM, RUN, COPY, CMD e EXPOSE para criar imagens.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "O comando docker build é usado para:",
+            "alternativas": [
+                "Executar um container",
+                "Construir uma imagem a partir de um Dockerfile",
+                "Parar um container",
+                "Listar VMs"
+            ],
+            "correta": 1,
+            "explicacao": "docker build cria uma imagem Docker com base nas instruções do Dockerfile.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa diferencia corretamente imagem e container?",
+            "alternativas": [
+                "Imagem é instância em execução; container é modelo",
+                "Imagem é modelo; container é instância em execução",
+                "Ambos são hypervisors",
+                "Container existe apenas em SaaS"
+            ],
+            "correta": 1,
+            "explicacao": "A imagem é a base/modelo. O container é a execução dessa imagem.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "O que é uma tag em imagens Docker?",
+            "alternativas": [
+                "Um rótulo usado para identificar versões de imagens",
+                "Um tipo de VM",
+                "Um comando para parar container",
+                "Um hypervisor Tipo 1"
+            ],
+            "correta": 0,
+            "explicacao": "Tags identificam versões de uma imagem, como nginx:latest ou ubuntu:22.04.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Docker Hub é um exemplo de:",
+            "alternativas": [
+                "Registry",
+                "Hypervisor",
+                "Sistema operacional",
+                "Kernel"
+            ],
+            "correta": 0,
+            "explicacao": "Docker Hub é um registry, ou seja, um serviço para armazenar e distribuir imagens Docker.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "No Docker, volumes servem principalmente para:",
+            "alternativas": [
+                "Aumentar o clock da CPU",
+                "Persistir dados fora do ciclo de vida do container",
+                "Criar hypervisors",
+                "Substituir o Dockerfile"
+            ],
+            "correta": 1,
+            "explicacao": "Volumes mantêm dados persistentes mesmo que o container seja removido.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Se um container de banco de dados for removido sem volume, o principal risco é:",
+            "alternativas": [
+                "Perder os dados armazenados no container",
+                "Transformar Docker em VM",
+                "Alterar o kernel do host",
+                "Criar outro hypervisor"
+            ],
+            "correta": 0,
+            "explicacao": "Sem volume, dados importantes podem ser perdidos junto com o container.",
+            "tema": "docker",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual opção representa melhor a relação entre Docker Compose e Docker Swarm?",
+            "alternativas": [
+                "Compose organiza múltiplos containers; Swarm orquestra containers em cluster",
+                "Compose substitui imagens; Swarm substitui Dockerfile",
+                "Compose é VM; Swarm é hypervisor",
+                "Ambos são modelos SaaS"
+            ],
+            "correta": 0,
+            "explicacao": "Compose facilita aplicações multicontainer em um ambiente; Swarm permite orquestração distribuída em cluster.",
+            "tema": "docker",
+            "dificuldade": "dificil"
+        }
+    ],
+    "parte2": [
+        {
+            "pergunta": "Qual dos pilares da segurança garante que apenas pessoas autorizadas tenham acesso às informações?",
+            "alternativas": [
+                "Integridade",
+                "Disponibilidade",
+                "Confidencialidade",
+                "Escalabilidade"
+            ],
+            "correta": 2,
+            "explicacao": "Confidencialidade protege os dados contra acessos não autorizados.",
+            "tema": "pilares",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual pilar garante que os dados não sejam alterados indevidamente?",
+            "alternativas": [
+                "Integridade",
+                "Disponibilidade",
+                "Firewall",
+                "Backup"
+            ],
+            "correta": 0,
+            "explicacao": "Integridade garante que os dados permaneçam corretos e íntegros.",
+            "tema": "pilares",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Uma empresa sofreu um ataque DDoS e o sistema ficou fora do ar. Qual pilar foi afetado principalmente?",
+            "alternativas": [
+                "Confidencialidade",
+                "Integridade",
+                "Disponibilidade",
+                "Criptografia"
+            ],
+            "correta": 2,
+            "explicacao": "Ataques DDoS comprometem a disponibilidade dos serviços.",
+            "tema": "pilares",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual tipo de criptografia utiliza uma única chave para criptografar e descriptografar?",
+            "alternativas": [
+                "Assimétrica",
+                "Hash",
+                "Simétrica",
+                "SSL"
+            ],
+            "correta": 2,
+            "explicacao": "Criptografia simétrica utiliza a mesma chave.",
+            "tema": "criptografia",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Na criptografia assimétrica são utilizadas:",
+            "alternativas": [
+                "Duas chaves",
+                "Uma chave",
+                "Nenhuma chave",
+                "Uma BIOS"
+            ],
+            "correta": 0,
+            "explicacao": "A criptografia assimétrica utiliza chave pública e privada.",
+            "tema": "criptografia",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "HTTPS utiliza principalmente qual conceito de segurança?",
+            "alternativas": [
+                "Virtualização",
+                "Criptografia",
+                "Docker",
+                "Escalonamento"
+            ],
+            "correta": 1,
+            "explicacao": "HTTPS utiliza criptografia para proteger a comunicação.",
+            "tema": "criptografia",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Pentest é definido como:",
+            "alternativas": [
+                "Ataque ilegal",
+                "Teste de invasão autorizado",
+                "Backup automático",
+                "Monitoramento de CPU"
+            ],
+            "correta": 1,
+            "explicacao": "Pentest é um teste autorizado para identificar vulnerabilidades.",
+            "tema": "pentest",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual ISO é voltada para gestão da segurança da informação?",
+            "alternativas": [
+                "ISO 9001",
+                "ISO 14000",
+                "ISO 27001",
+                "ISO 50001"
+            ],
+            "correta": 2,
+            "explicacao": "ISO 27001 trata gestão da segurança da informação.",
+            "tema": "iso",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual ISO é focada em gestão de riscos?",
+            "alternativas": [
+                "ISO 27005",
+                "ISO 9001",
+                "ISO 22000",
+                "ISO 14000"
+            ],
+            "correta": 0,
+            "explicacao": "ISO 27005 aborda gerenciamento de riscos em segurança.",
+            "tema": "iso",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Uma pessoa recebe uma ligação falsa solicitando senha do banco. Isso é um exemplo de:",
+            "alternativas": [
+                "Firewall",
+                "Engenharia Social",
+                "Criptografia",
+                "Virtualização"
+            ],
+            "correta": 1,
+            "explicacao": "Engenharia social explora falhas humanas através de manipulação.",
+            "tema": "engenharia_social",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Uma vulnerabilidade é:",
+            "alternativas": [
+                "Um ataque realizado",
+                "Uma falha explorável",
+                "Um backup",
+                "Um antivírus"
+            ],
+            "correta": 1,
+            "explicacao": "Vulnerabilidade é uma fraqueza que pode ser explorada.",
+            "tema": "seguranca",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual alternativa representa um exemplo de ameaça?",
+            "alternativas": [
+                "Senha forte",
+                "Backup",
+                "Ransomware",
+                "Firewall"
+            ],
+            "correta": 2,
+            "explicacao": "Ransomware é uma ameaça que sequestra dados.",
+            "tema": "seguranca",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Uma empresa deseja garantir que os dados permaneçam acessíveis mesmo após falhas no servidor. Qual prática ajuda nisso?",
+            "alternativas": [
+                "Disponibilidade",
+                "Criptografia",
+                "Fragmentação",
+                "Hypervisor"
+            ],
+            "correta": 0,
+            "explicacao": "Disponibilidade busca manter sistemas acessíveis.",
+            "tema": "pilares",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa representa uma vantagem da criptografia simétrica?",
+            "alternativas": [
+                "Maior velocidade",
+                "Uso de duas chaves",
+                "Maior consumo",
+                "Não utiliza chave"
+            ],
+            "correta": 0,
+            "explicacao": "Criptografia simétrica é mais rápida.",
+            "tema": "criptografia",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente a criptografia assimétrica?",
+            "alternativas": [
+                "Usa apenas uma chave",
+                "Usa chave pública e privada",
+                "Não protege dados",
+                "É exclusiva do Docker"
+            ],
+            "correta": 1,
+            "explicacao": "A criptografia assimétrica trabalha com duas chaves.",
+            "tema": "criptografia",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa melhor descreve um ataque de engenharia social?",
+            "alternativas": [
+                "Exploração psicológica de usuários",
+                "Ataque físico ao hardware",
+                "Falha elétrica",
+                "Erro do kernel"
+            ],
+            "correta": 0,
+            "explicacao": "Engenharia social manipula pessoas para obter acesso.",
+            "tema": "engenharia_social",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Uma empresa contratou especialistas para tentar invadir seus sistemas legalmente. O objetivo principal é:",
+            "alternativas": [
+                "Roubar informações",
+                "Encontrar vulnerabilidades",
+                "Desligar servidores",
+                "Criar malware"
+            ],
+            "correta": 1,
+            "explicacao": "Pentest busca identificar falhas antes de invasores reais.",
+            "tema": "pentest",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual conceito representa a chance de uma ameaça explorar uma vulnerabilidade?",
+            "alternativas": [
+                "Risco",
+                "Backup",
+                "Firewall",
+                "Hash"
+            ],
+            "correta": 0,
+            "explicacao": "Risco é a probabilidade de exploração de vulnerabilidades.",
+            "tema": "seguranca",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Uma empresa deseja proteger a comunicação entre cliente e servidor na web. Qual solução é mais apropriada?",
+            "alternativas": [
+                "HTTPS",
+                "Docker",
+                "VM",
+                "Swap"
+            ],
+            "correta": 0,
+            "explicacao": "HTTPS utiliza criptografia para proteger dados em trânsito.",
+            "tema": "criptografia",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente o objetivo da ISO 27005?",
+            "alternativas": [
+                "Gerenciamento de riscos",
+                "Gerenciamento financeiro",
+                "Criação de VMs",
+                "Virtualização de servidores"
+            ],
+            "correta": 0,
+            "explicacao": "ISO 27005 trata especificamente gestão de riscos.",
+            "tema": "iso",
+            "dificuldade": "medio"
+        },
+        [
+            {
+                "pergunta": "Qual dos pilares da segurança é responsável por garantir que os dados estejam corretos e sem alterações indevidas?",
+                "alternativas": [
+                    "Disponibilidade",
+                    "Integridade",
+                    "Confidencialidade",
+                    "Escalabilidade"
+                ],
+                "correta": 1,
+                "explicacao": "Integridade garante que os dados permaneçam corretos e não sejam alterados indevidamente.",
+                "tema": "pilares",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Uma empresa sofreu vazamento de senhas após funcionários clicarem em links falsos enviados por e-mail. Qual técnica foi utilizada?",
+                "alternativas": [
+                    "Pentest",
+                    "Virtualização",
+                    "Engenharia Social",
+                    "Hypervisor"
+                ],
+                "correta": 2,
+                "explicacao": "Engenharia social manipula usuários para obter informações sensíveis.",
+                "tema": "engenharia_social",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa um mecanismo usado para aumentar a disponibilidade dos sistemas?",
+                "alternativas": [
+                    "Redundância",
+                    "Fragmentação",
+                    "Swap",
+                    "Kernel"
+                ],
+                "correta": 0,
+                "explicacao": "Redundância ajuda a manter sistemas disponíveis mesmo em falhas.",
+                "tema": "pilares",
+                "dificuldade": "dificil"
+            },
+            {
+                "pergunta": "Qual é a principal vantagem da criptografia assimétrica sobre a simétrica?",
+                "alternativas": [
+                    "Maior velocidade",
+                    "Uso de apenas uma chave",
+                    "Maior segurança na troca de chaves",
+                    "Menor processamento"
+                ],
+                "correta": 2,
+                "explicacao": "A criptografia assimétrica resolve o problema da troca segura de chaves.",
+                "tema": "criptografia",
+                "dificuldade": "dificil"
+            },
+            {
+                "pergunta": "Em um pentest, o profissional responsável pelo teste é normalmente chamado de:",
+                "alternativas": [
+                    "White Hat",
+                    "Black Hat",
+                    "Cracker",
+                    "Spam"
+                ],
+                "correta": 0,
+                "explicacao": "White Hats realizam testes éticos e autorizados.",
+                "tema": "pentest",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa corretamente a relação entre ameaça, vulnerabilidade e risco?",
+                "alternativas": [
+                    "Risco elimina vulnerabilidades",
+                    "Ameaças exploram vulnerabilidades gerando riscos",
+                    "Vulnerabilidade elimina ameaças",
+                    "Risco substitui criptografia"
+                ],
+                "correta": 1,
+                "explicacao": "Ameaças podem explorar vulnerabilidades e gerar riscos aos sistemas.",
+                "tema": "seguranca",
+                "dificuldade": "dificil"
+            },
+            {
+                "pergunta": "Uma empresa deseja impedir que usuários não autorizados visualizem informações sigilosas. Qual conceito está sendo aplicado?",
+                "alternativas": [
+                    "Integridade",
+                    "Disponibilidade",
+                    "Confidencialidade",
+                    "Escalonamento"
+                ],
+                "correta": 2,
+                "explicacao": "Confidencialidade protege informações contra acessos indevidos.",
+                "tema": "pilares",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa corretamente uma função da ISO 27001?",
+                "alternativas": [
+                    "Gerenciar segurança da informação",
+                    "Criar containers Docker",
+                    "Gerenciar memória RAM",
+                    "Executar pentests automaticamente"
+                ],
+                "correta": 0,
+                "explicacao": "A ISO 27001 estabelece boas práticas para segurança da informação.",
+                "tema": "iso",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Hashes criptográficos normalmente são utilizados para:",
+                "alternativas": [
+                    "Armazenar senhas com segurança",
+                    "Criar máquinas virtuais",
+                    "Gerenciar BIOS",
+                    "Executar containers"
+                ],
+                "correta": 0,
+                "explicacao": "Hashes ajudam a armazenar senhas sem salvar o valor original.",
+                "tema": "criptografia",
+                "dificuldade": "dificil"
+            },
+            {
+                "pergunta": "Qual alternativa representa corretamente um objetivo do pentest?",
+                "alternativas": [
+                    "Criar vulnerabilidades",
+                    "Identificar falhas antes de ataques reais",
+                    "Substituir firewalls",
+                    "Remover backups"
+                ],
+                "correta": 1,
+                "explicacao": "Pentests ajudam a encontrar vulnerabilidades antes que invasores explorem.",
+                "tema": "pentest",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Na pirâmide do conhecimento, qual elemento representa fatos brutos sem contexto?",
+                "alternativas": [
+                    "Informação",
+                    "Conhecimento",
+                    "Dados",
+                    "Sabedoria"
+                ],
+                "correta": 2,
+                "explicacao": "Dados são fatos brutos sem interpretação ou contexto.",
+                "tema": "piramide_conhecimento",
+                "dificuldade": "facil"
+            },
+            {
+                "pergunta": "Qual alternativa representa corretamente a sequência da pirâmide do conhecimento?",
+                "alternativas": [
+                    "Sabedoria → Informação → Dados → Conhecimento",
+                    "Dados → Informação → Conhecimento → Sabedoria",
+                    "Conhecimento → Dados → Informação → Sabedoria",
+                    "Informação → Dados → Sabedoria → Conhecimento"
+                ],
+                "correta": 1,
+                "explicacao": "A ordem correta é Dados, Informação, Conhecimento e Sabedoria.",
+                "tema": "piramide_conhecimento",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Uma senha biométrica na porta de um datacenter é um exemplo de:",
+                "alternativas": [
+                    "Controle lógico",
+                    "Controle físico",
+                    "Hash",
+                    "Virtualização"
+                ],
+                "correta": 1,
+                "explicacao": "Biometria física utilizada para acesso ao ambiente é controle físico.",
+                "tema": "controles",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Firewall e autenticação de login são exemplos de:",
+                "alternativas": [
+                    "Controle físico",
+                    "Controle lógico",
+                    "Controle mecânico",
+                    "Controle estrutural"
+                ],
+                "correta": 1,
+                "explicacao": "Controles lógicos atuam digitalmente protegendo acesso aos sistemas.",
+                "tema": "controles",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa melhor o objetivo de uma Política de Segurança da Informação?",
+                "alternativas": [
+                    "Aumentar FPS do sistema",
+                    "Definir regras e diretrizes para proteger informações",
+                    "Criar máquinas virtuais",
+                    "Executar containers"
+                ],
+                "correta": 1,
+                "explicacao": "A política de segurança estabelece normas e responsabilidades de proteção da informação.",
+                "tema": "politica_seguranca",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual abordagem atua antes que os incidentes ocorram?",
+                "alternativas": [
+                    "Reativa",
+                    "Corretiva",
+                    "Proativa",
+                    "Passiva"
+                ],
+                "correta": 2,
+                "explicacao": "A abordagem proativa busca prevenir problemas antes que aconteçam.",
+                "tema": "gestao_riscos",
+                "dificuldade": "facil"
+            },
+            {
+                "pergunta": "Após um ataque, a empresa realiza auditoria e análise do incidente. Isso caracteriza abordagem:",
+                "alternativas": [
+                    "Proativa",
+                    "Preventiva",
+                    "Reativa",
+                    "Escalonada"
+                ],
+                "correta": 2,
+                "explicacao": "A abordagem reativa ocorre após o incidente acontecer.",
+                "tema": "gestao_riscos",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual ISO apresenta conceitos e fundamentos da família ISO 27000?",
+                "alternativas": [
+                    "ISO 27005",
+                    "ISO 27002",
+                    "ISO 27000",
+                    "ISO 9001"
+                ],
+                "correta": 2,
+                "explicacao": "A ISO 27000 fornece conceitos e terminologias da família ISO 27000.",
+                "tema": "iso",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual ISO fornece boas práticas e controles de segurança?",
+                "alternativas": [
+                    "ISO 27003",
+                    "ISO 27002",
+                    "ISO 14000",
+                    "ISO 22000"
+                ],
+                "correta": 1,
+                "explicacao": "A ISO 27002 apresenta boas práticas e controles de segurança da informação.",
+                "tema": "iso",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual ISO auxilia na implementação do SGSI?",
+                "alternativas": [
+                    "ISO 27003",
+                    "ISO 27005",
+                    "ISO 27000",
+                    "ISO 9001"
+                ],
+                "correta": 0,
+                "explicacao": "A ISO 27003 fornece orientações para implementação do SGSI.",
+                "tema": "iso",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa corretamente uma análise qualitativa de riscos?",
+                "alternativas": [
+                    "Risco médio",
+                    "Prejuízo de R$ 50 mil",
+                    "Cálculo de RAM",
+                    "Hash SHA-256"
+                ],
+                "correta": 0,
+                "explicacao": "Análises qualitativas classificam riscos em níveis como baixo, médio ou alto.",
+                "tema": "gestao_riscos",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa representa uma análise quantitativa?",
+                "alternativas": [
+                    "Risco crítico",
+                    "Risco moderado",
+                    "Prejuízo estimado em R$ 100 mil",
+                    "Ameaça alta"
+                ],
+                "correta": 2,
+                "explicacao": "Análises quantitativas utilizam valores numéricos e métricas financeiras.",
+                "tema": "gestao_riscos",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Mitigar um risco significa:",
+                "alternativas": [
+                    "Eliminar totalmente qualquer ameaça",
+                    "Reduzir o impacto ou probabilidade do risco",
+                    "Criar vulnerabilidades",
+                    "Ignorar o risco"
+                ],
+                "correta": 1,
+                "explicacao": "Mitigar significa reduzir riscos a níveis aceitáveis.",
+                "tema": "gestao_riscos",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Aceitar um risco significa:",
+                "alternativas": [
+                    "Eliminar sistemas",
+                    "Conviver conscientemente com o risco",
+                    "Executar malware",
+                    "Desativar backups"
+                ],
+                "correta": 1,
+                "explicacao": "Aceitar risco significa reconhecer sua existência sem implementar controles adicionais.",
+                "tema": "gestao_riscos",
+                "dificuldade": "dificil"
+            },
+            {
+                "pergunta": "Transferir um risco geralmente envolve:",
+                "alternativas": [
+                    "Seguro",
+                    "Excluir usuários",
+                    "Criar VMs",
+                    "Desligar sistemas"
+                ],
+                "correta": 0,
+                "explicacao": "Transferência de risco normalmente ocorre por seguros ou terceirizações.",
+                "tema": "gestao_riscos",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual malware possui capacidade de se replicar automaticamente pela rede?",
+                "alternativas": [
+                    "Trojan",
+                    "Spyware",
+                    "Worm",
+                    "Adware"
+                ],
+                "correta": 2,
+                "explicacao": "Worms conseguem se propagar automaticamente entre sistemas.",
+                "tema": "malware",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Trojan normalmente depende de:",
+                "alternativas": [
+                    "Execução pelo usuário",
+                    "Virtualização",
+                    "Swap",
+                    "Containers"
+                ],
+                "correta": 0,
+                "explicacao": "Trojans geralmente precisam que o usuário execute o arquivo malicioso.",
+                "tema": "malware",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Ransomware normalmente possui qual objetivo?",
+                "alternativas": [
+                    "Aumentar disponibilidade",
+                    "Sequestrar dados e exigir pagamento",
+                    "Criar backups",
+                    "Gerenciar CPU"
+                ],
+                "correta": 1,
+                "explicacao": "Ransomwares criptografam arquivos e exigem pagamento para recuperação.",
+                "tema": "malware",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Hash criptográfico é muito utilizado para:",
+                "alternativas": [
+                    "Integridade e armazenamento seguro de senhas",
+                    "Virtualizar hardware",
+                    "Criar containers",
+                    "Substituir HTTPS"
+                ],
+                "correta": 0,
+                "explicacao": "Hashes ajudam a validar integridade e proteger senhas.",
+                "tema": "criptografia",
+                "dificuldade": "medio"
+            },
+            {
+                "pergunta": "Qual alternativa diferencia corretamente criptografia e hash?",
+                "alternativas": [
+                    "Hash normalmente não é reversível",
+                    "Hash usa chave pública",
+                    "Criptografia não protege dados",
+                    "Hash substitui firewall"
+                ],
+                "correta": 0,
+                "explicacao": "Hashes normalmente não podem ser revertidos ao valor original.",
+                "tema": "criptografia",
+                "dificuldade": "dificil"
+            }
+        ]
+    ],
+    "parte3": [
+        {
+            "pergunta": "Qual é o principal objetivo da LGPD?",
+            "alternativas": [
+                "Criar máquinas virtuais",
+                "Proteger dados pessoais",
+                "Gerenciar kernels Linux",
+                "Executar containers"
+            ],
+            "correta": 1,
+            "explicacao": "A LGPD busca proteger dados pessoais e garantir privacidade aos usuários.",
+            "tema": "lgpd",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual alternativa representa um dado pessoal?",
+            "alternativas": [
+                "CPU",
+                "Kernel",
+                "CPF",
+                "Dockerfile"
+            ],
+            "correta": 2,
+            "explicacao": "CPF é um dado capaz de identificar diretamente uma pessoa.",
+            "tema": "lgpd",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual alternativa representa um dado sensível?",
+            "alternativas": [
+                "Nome",
+                "Email",
+                "Biometria",
+                "IP"
+            ],
+            "correta": 2,
+            "explicacao": "Dados biométricos são considerados dados sensíveis pela LGPD.",
+            "tema": "lgpd",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Quem é o titular dos dados?",
+            "alternativas": [
+                "Empresa",
+                "Servidor",
+                "Pessoa a quem os dados pertencem",
+                "ANPD"
+            ],
+            "correta": 2,
+            "explicacao": "Titular é a pessoa natural dona dos dados pessoais.",
+            "tema": "lgpd",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Quem decide como os dados serão tratados?",
+            "alternativas": [
+                "Operador",
+                "Firewall",
+                "Controlador",
+                "Kernel"
+            ],
+            "correta": 2,
+            "explicacao": "O controlador toma decisões sobre o tratamento dos dados.",
+            "tema": "lgpd",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Quem executa o tratamento dos dados seguindo instruções do controlador?",
+            "alternativas": [
+                "Operador",
+                "Hypervisor",
+                "Docker Engine",
+                "Root"
+            ],
+            "correta": 0,
+            "explicacao": "O operador realiza o tratamento seguindo instruções do controlador.",
+            "tema": "lgpd",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "ANPD significa:",
+            "alternativas": [
+                "Autoridade Nacional de Proteção de Dados",
+                "Associação Nacional de Processos Digitais",
+                "Agência Nacional de Programação Docker",
+                "Administração Nacional de Protocolos Digitais"
+            ],
+            "correta": 0,
+            "explicacao": "A ANPD é o órgão responsável pela fiscalização da LGPD.",
+            "tema": "lgpd",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "A multa da LGPD pode chegar a:",
+            "alternativas": [
+                "50 mil reais",
+                "50 milhões de reais",
+                "500 milhões de reais",
+                "2 bilhões de reais"
+            ],
+            "correta": 1,
+            "explicacao": "A LGPD prevê multas de até 50 milhões de reais por infração.",
+            "tema": "lgpd",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual lei estabelece princípios e deveres para o uso da internet no Brasil?",
+            "alternativas": [
+                "ISO 27001",
+                "Marco Civil da Internet",
+                "LGPD",
+                "CLT"
+            ],
+            "correta": 1,
+            "explicacao": "O Marco Civil da Internet regula direitos e deveres relacionados ao uso da internet.",
+            "tema": "marco_civil",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Neutralidade da rede significa:",
+            "alternativas": [
+                "Bloquear determinados sites",
+                "Tratar todo tráfego da internet igualmente",
+                "Executar malware",
+                "Aumentar a velocidade apenas de streaming"
+            ],
+            "correta": 1,
+            "explicacao": "Neutralidade garante tratamento igualitário ao tráfego da internet.",
+            "tema": "marco_civil",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Linux é tecnicamente:",
+            "alternativas": [
+                "Um antivírus",
+                "Um banco de dados",
+                "Um kernel",
+                "Um container"
+            ],
+            "correta": 2,
+            "explicacao": "Linux é o kernel utilizado em várias distribuições.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Ubuntu, Debian e Kali Linux são exemplos de:",
+            "alternativas": [
+                "Hypervisors",
+                "Distribuições Linux",
+                "Kernels",
+                "Containers"
+            ],
+            "correta": 1,
+            "explicacao": "Ubuntu, Debian e Kali são distribuições baseadas no kernel Linux.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual componente do sistema operacional faz comunicação entre software e hardware?",
+            "alternativas": [
+                "Shell",
+                "Docker",
+                "Kernel",
+                "Registry"
+            ],
+            "correta": 2,
+            "explicacao": "O kernel gerencia recursos e faz a comunicação entre hardware e software.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Shell é:",
+            "alternativas": [
+                "O núcleo do sistema",
+                "Uma máquina virtual",
+                "Interface de comandos",
+                "Um container"
+            ],
+            "correta": 2,
+            "explicacao": "Shell interpreta comandos enviados ao sistema operacional.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Bash é um exemplo de:",
+            "alternativas": [
+                "Kernel",
+                "Shell",
+                "Dockerfile",
+                "Hypervisor"
+            ],
+            "correta": 1,
+            "explicacao": "Bash é um dos shells mais utilizados em Linux.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "No Linux, o diretório raiz é representado por:",
+            "alternativas": [
+                "C:\\",
+                "/",
+                "root.exe",
+                "/bin/root"
+            ],
+            "correta": 1,
+            "explicacao": "O diretório raiz do Linux é representado por /.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Qual diretório normalmente armazena arquivos de usuários?",
+            "alternativas": [
+                "/etc",
+                "/tmp",
+                "/home",
+                "/bin"
+            ],
+            "correta": 2,
+            "explicacao": "O diretório /home armazena dados dos usuários.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "O comando ls é utilizado para:",
+            "alternativas": [
+                "Criar diretórios",
+                "Listar arquivos",
+                "Apagar kernel",
+                "Executar VM"
+            ],
+            "correta": 1,
+            "explicacao": "ls lista arquivos e diretórios no Linux.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "O comando cd serve para:",
+            "alternativas": [
+                "Alterar diretório",
+                "Excluir arquivos",
+                "Criar containers",
+                "Executar shell"
+            ],
+            "correta": 0,
+            "explicacao": "cd é usado para navegar entre diretórios.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "O comando pwd mostra:",
+            "alternativas": [
+                "Permissões do sistema",
+                "Diretório atual",
+                "Usuários ativos",
+                "Memória RAM"
+            ],
+            "correta": 1,
+            "explicacao": "pwd exibe o diretório atual em que o usuário está.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "chmod é utilizado para:",
+            "alternativas": [
+                "Executar containers",
+                "Alterar permissões",
+                "Criar kernel",
+                "Gerenciar ISO"
+            ],
+            "correta": 1,
+            "explicacao": "chmod altera permissões de arquivos e diretórios.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "A permissão 777 significa:",
+            "alternativas": [
+                "Sem acesso",
+                "Somente leitura",
+                "Permissão total para todos",
+                "Permissão apenas para root"
+            ],
+            "correta": 2,
+            "explicacao": "777 concede leitura, escrita e execução para todos.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Swap é:",
+            "alternativas": [
+                "Tipo de malware",
+                "Área do disco usada como extensão da RAM",
+                "Kernel Linux",
+                "Hypervisor"
+            ],
+            "correta": 1,
+            "explicacao": "Swap funciona como memória virtual usando espaço em disco.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Round Robin é um algoritmo de:",
+            "alternativas": [
+                "Criptografia",
+                "Escalonamento",
+                "Virtualização",
+                "Compressão"
+            ],
+            "correta": 1,
+            "explicacao": "Round Robin distribui tempo de CPU igualmente entre processos.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "No algoritmo Round Robin, quantum representa:",
+            "alternativas": [
+                "Memória RAM",
+                "Tempo de CPU para cada processo",
+                "Tipo de kernel",
+                "Espaço em disco"
+            ],
+            "correta": 1,
+            "explicacao": "Quantum é o tempo que cada processo pode usar a CPU.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "FIFO significa:",
+            "alternativas": [
+                "First In First Out",
+                "Fast Internal File Operation",
+                "File Integration Framework Output",
+                "First Internal Function Object"
+            ],
+            "correta": 0,
+            "explicacao": "FIFO significa Primeiro a Entrar, Primeiro a Sair.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Thread é:",
+            "alternativas": [
+                "Uma linha de execução dentro de um processo",
+                "Um sistema operacional",
+                "Um hypervisor",
+                "Um firewall"
+            ],
+            "correta": 0,
+            "explicacao": "Threads são linhas de execução dentro de um processo.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "CLI significa:",
+            "alternativas": [
+                "Cloud Linux Interface",
+                "Command Line Interface",
+                "Container Linux Integration",
+                "Central Logic Interface"
+            ],
+            "correta": 1,
+            "explicacao": "CLI é interface por linha de comando.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "GUI significa:",
+            "alternativas": [
+                "General User Integration",
+                "Graphical User Interface",
+                "Global Unix Interface",
+                "Graphical Utility Infrastructure"
+            ],
+            "correta": 1,
+            "explicacao": "GUI é interface gráfica do usuário.",
+            "tema": "linux",
+            "dificuldade": "facil"
+        },
+        {
+            "pergunta": "Kali Linux é conhecido principalmente por:",
+            "alternativas": [
+                "Jogos",
+                "Segurança e pentest",
+                "Virtualização",
+                "Cloud pública"
+            ],
+            "correta": 1,
+            "explicacao": "Kali Linux é uma distribuição voltada para segurança ofensiva e pentest.",
+            "tema": "linux",
+            "dificuldade": "medio"
+        },
+        {
+            "pergunta": "Qual situação representa uma violação da neutralidade da rede?",
+            "alternativas": [
+                "Uma operadora reduzir propositalmente a velocidade de um streaming específico",
+                "Usuário utilizar VPN",
+                "Empresa usar firewall",
+                "Servidor utilizar Linux"
+            ],
+            "correta": 0,
+            "explicacao": "Neutralidade da rede exige tratamento igualitário ao tráfego da internet.",
+            "tema": "marco_civil",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa diferencia corretamente kernel e shell?",
+            "alternativas": [
+                "Kernel interpreta comandos e shell controla hardware",
+                "Shell é o núcleo do sistema e kernel executa scripts",
+                "Kernel controla hardware e shell interpreta comandos do usuário",
+                "Ambos são a mesma coisa"
+            ],
+            "correta": 2,
+            "explicacao": "Kernel gerencia hardware e recursos; shell interpreta comandos enviados pelo usuário.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Por que chmod 777 é considerado perigoso em ambientes corporativos?",
+            "alternativas": [
+                "Porque remove o kernel",
+                "Porque concede permissões totais para qualquer usuário",
+                "Porque cria containers automaticamente",
+                "Porque impede execução de scripts"
+            ],
+            "correta": 1,
+            "explicacao": "chmod 777 libera leitura, escrita e execução para todos os usuários.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual problema pode ocorrer quando o espaço Swap é excessivamente utilizado?",
+            "alternativas": [
+                "Melhora extrema de desempenho",
+                "Troca intensa de dados entre RAM e disco, reduzindo performance",
+                "Kernel deixa de existir",
+                "Containers param automaticamente"
+            ],
+            "correta": 1,
+            "explicacao": "Uso excessivo de swap reduz desempenho devido à lentidão do disco comparado à RAM.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "No Round Robin, um quantum muito grande faz o algoritmo se aproximar de:",
+            "alternativas": [
+                "FIFO",
+                "Swap",
+                "Docker Swarm",
+                "Criptografia simétrica"
+            ],
+            "correta": 0,
+            "explicacao": "Quantum muito alto reduz alternâncias, aproximando o comportamento do FIFO.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente a relação entre processo e thread?",
+            "alternativas": [
+                "Threads possuem memória totalmente isolada entre si",
+                "Threads compartilham recursos do mesmo processo",
+                "Processos dependem exclusivamente de swap",
+                "Threads substituem o kernel"
+            ],
+            "correta": 1,
+            "explicacao": "Threads compartilham recursos e memória do mesmo processo.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Se uma empresa coleta biometria de funcionários sem necessidade real e sem consentimento adequado, qual princípio da LGPD pode estar sendo violado?",
+            "alternativas": [
+                "Necessidade",
+                "Virtualização",
+                "Escalonamento",
+                "Round Robin"
+            ],
+            "correta": 0,
+            "explicacao": "A LGPD exige coleta mínima necessária de dados para determinada finalidade.",
+            "tema": "lgpd",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente um tratamento inadequado de dados pessoais?",
+            "alternativas": [
+                "Coletar apenas dados necessários",
+                "Excluir dados após finalidade cumprida",
+                "Compartilhar dados sem finalidade legítima",
+                "Proteger dados com criptografia"
+            ],
+            "correta": 2,
+            "explicacao": "Compartilhamento indevido viola princípios da LGPD.",
+            "tema": "lgpd",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Por que servidores Linux normalmente utilizam CLI ao invés de GUI?",
+            "alternativas": [
+                "CLI consome menos recursos e facilita automação",
+                "GUI não existe no Linux",
+                "CLI substitui kernel",
+                "GUI impede acesso root"
+            ],
+            "correta": 0,
+            "explicacao": "CLI é mais leve, eficiente e prática para administração de servidores.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual diretório Linux normalmente contém logs do sistema e arquivos variáveis?",
+            "alternativas": [
+                "/etc",
+                "/tmp",
+                "/var",
+                "/root"
+            ],
+            "correta": 2,
+            "explicacao": "O diretório /var geralmente armazena logs e arquivos variáveis do sistema.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual é o principal risco de executar comandos usando sudo sem cuidado?",
+            "alternativas": [
+                "Redução do consumo de RAM",
+                "Alterações críticas no sistema com privilégios administrativos",
+                "Criação automática de containers",
+                "Perda do shell"
+            ],
+            "correta": 1,
+            "explicacao": "sudo executa comandos com privilégios elevados, podendo causar danos críticos.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente a diferença entre CLI e GUI?",
+            "alternativas": [
+                "CLI usa comandos; GUI utiliza elementos gráficos",
+                "GUI controla hardware e CLI executa kernel",
+                "CLI existe apenas em Windows",
+                "GUI é obrigatória em servidores"
+            ],
+            "correta": 0,
+            "explicacao": "CLI trabalha com linha de comando; GUI utiliza interface gráfica.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Se um processo possui múltiplas threads e uma delas trava, qual consequência pode ocorrer?",
+            "alternativas": [
+                "Todo o processo pode ser afetado",
+                "Kernel é removido",
+                "Swap deixa de funcionar",
+                "Docker Hub para automaticamente"
+            ],
+            "correta": 0,
+            "explicacao": "Threads compartilham recursos do processo, então falhas podem impactar todo o processo.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente o conceito de GNU/Linux?",
+            "alternativas": [
+                "GNU é o kernel e Linux é a interface gráfica",
+                "Linux é o kernel e GNU fornece ferramentas do sistema",
+                "GNU substitui containers",
+                "Linux é um hypervisor"
+            ],
+            "correta": 1,
+            "explicacao": "GNU fornece ferramentas e utilitários enquanto Linux é o kernel.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Por que o Kali Linux é amplamente usado em pentest?",
+            "alternativas": [
+                "Porque possui ferramentas focadas em segurança ofensiva",
+                "Porque substitui firewalls",
+                "Porque cria hypervisors",
+                "Porque elimina vulnerabilidades automaticamente"
+            ],
+            "correta": 0,
+            "explicacao": "Kali Linux possui ferramentas especializadas em testes de invasão e segurança.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente um risco relacionado ao tratamento inadequado de dados sensíveis?",
+            "alternativas": [
+                "Discriminação e vazamento crítico de informações",
+                "Aumento de FPS",
+                "Melhoria do kernel",
+                "Maior velocidade da RAM"
+            ],
+            "correta": 0,
+            "explicacao": "Dados sensíveis vazados podem gerar discriminação e graves danos ao titular.",
+            "tema": "lgpd",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "O que pode acontecer se um usuário executar 'rm -rf /' com privilégios root?",
+            "alternativas": [
+                "Apenas arquivos temporários serão removidos",
+                "O sistema pode ser destruído",
+                "Somente containers serão apagados",
+                "Nada acontecerá"
+            ],
+            "correta": 1,
+            "explicacao": "Esse comando remove arquivos recursivamente a partir da raiz do sistema.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual alternativa representa corretamente a relação entre Linux e Android?",
+            "alternativas": [
+                "Android utiliza kernel Linux",
+                "Android é um hypervisor",
+                "Linux depende do Android",
+                "Android é um container Docker"
+            ],
+            "correta": 0,
+            "explicacao": "O Android utiliza uma versão adaptada do kernel Linux.",
+            "tema": "linux",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Qual problema pode ocorrer em sistemas FIFO quando processos muito longos entram primeiro?",
+            "alternativas": [
+                "Starvation de processos menores",
+                "Criptografia automática",
+                "Desativação do kernel",
+                "Virtualização excessiva"
+            ],
+            "correta": 0,
+            "explicacao": "Processos menores podem ficar esperando muito tempo em FIFO.",
+            "tema": "sistemas_operacionais",
+            "dificuldade": "dificil"
+        },
+        {
+            "pergunta": "Em segurança e LGPD, qual prática ajuda a reduzir impacto de vazamentos de dados?",
+            "alternativas": [
+                "Criptografia",
+                "chmod 777",
+                "Desativar logs",
+                "Compartilhar senhas"
+            ],
+            "correta": 0,
+            "explicacao": "Criptografia protege dados mesmo em casos de acesso indevido.",
+            "tema": "lgpd",
+            "dificuldade": "dificil"
+        }
+    ]
+}

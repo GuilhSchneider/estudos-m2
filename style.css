@@ -1,0 +1,517 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+    background:linear-gradient(135deg, #020617, #0f172a);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    padding:14px;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+    width:100%;
+    max-width:850px;
+    margin:auto;
+    overflow:hidden;
+}
+
+/* ===== TITULOS ===== */
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:clamp(28px, 5vw, 42px);
+    font-weight:800;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:14px;
+    font-size:clamp(20px, 3vw, 28px);
+}
+
+h3{
+    color:#facc15;
+    margin-top:16px;
+    margin-bottom:12px;
+    font-size:clamp(16px, 2vw, 20px);
+}
+
+/* ===== TEXTOS ===== */
+
+p{
+    margin-bottom:14px;
+    font-size:clamp(14px, 2vw, 16px);
+}
+
+ul{
+    margin-left:22px;
+    margin-top:10px;
+    margin-bottom:18px;
+}
+
+li{
+    margin-bottom:8px;
+    font-size:clamp(14px, 2vw, 16px);
+}
+
+/* ===== CARDS ===== */
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:22px;
+    box-shadow:0 0 12px rgba(0,0,0,0.25);
+    transition:0.25s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-2px);
+}
+
+/* ===== BOTÕES GERAIS ===== */
+
+button{
+    background:#38bdf8;
+    color:#0f172a;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+button:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
+
+/* ===== BOTÃO PADRÃO ===== */
+
+.btn{
+    padding:14px 20px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+/* ===== QUIZ ===== */
+
+#quiz{
+    margin-top:25px;
+    overflow:hidden;
+}
+
+.pergunta{
+    background:#1e293b;
+    padding:16px;
+    border-radius:16px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,255,255,0.05);
+    overflow:hidden;
+}
+
+.pergunta h2,
+.pergunta h3{
+    color:#facc15;
+    font-size:clamp(15px, 2vw, 19px);
+    margin-bottom:16px;
+    line-height:1.5;
+}
+
+/* ===== INFO QUESTÃO ===== */
+
+.info-pergunta{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:16px;
+}
+
+.tema,
+.dificuldade{
+    padding:5px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.tema{
+    background:#0f172a;
+}
+
+.facil{
+    background:#166534;
+}
+
+.medio{
+    background:#854d0e;
+}
+
+.dificil{
+    background:#991b1b;
+}
+
+/* ===== ALTERNATIVAS ===== */
+
+.alternativas{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:100%;
+}
+
+.alternativa{
+    width:100%;
+    max-width:100%;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+
+    background:#334155;
+    padding:12px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.2s;
+    font-size:14px;
+    border:1px solid transparent;
+    color:white;
+
+    word-break:break-word;
+    overflow-wrap:anywhere;
+}
+
+.alternativa input{
+    margin-top:3px;
+    flex-shrink:0;
+}
+
+.alternativa:hover{
+    background:#475569;
+    border-color:#38bdf8;
+}
+
+/* ===== RESPOSTA CORRETA ===== */
+
+.correta{
+    background:#166534 !important;
+    border:1px solid #22c55e;
+    color:white;
+}
+
+/* ===== RESPOSTA ERRADA ===== */
+
+.errada{
+    background:#7f1d1d !important;
+    border:1px solid #ef4444;
+    color:white;
+}
+
+/* ===== EXPLICAÇÃO ===== */
+
+.explicacao{
+    margin-top:16px;
+    padding:14px;
+    background:#0f172a;
+    border-radius:12px;
+    border-left:4px solid #38bdf8;
+}
+
+/* ===== RESULTADO ===== */
+
+#resultado{
+    margin-top:30px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+}
+
+/* ===== HOME ===== */
+
+.home-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px;
+}
+
+.home-card{
+    width:100%;
+    max-width:760px;
+    background:rgba(30,41,59,0.75);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:28px;
+    border-radius:24px;
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.30),
+        0 0 60px rgba(56,189,248,0.06);
+}
+
+.home-card h1{
+    margin-bottom:14px;
+}
+
+.descricao{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:28px;
+    font-size:15px;
+}
+
+/* ===== BOTÕES HOME ===== */
+
+.home-botoes{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.home-botoes button{
+    width:100%;
+    background:linear-gradient(135deg, #1e293b, #334155);
+    border:1px solid rgba(255,255,255,0.06);
+    padding:20px;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+
+    text-align:left;
+    color:white;
+    transition:0.3s;
+    font-size:21px;
+    font-weight:700;
+}
+
+.home-botoes button:hover{
+    transform:translateY(-4px) scale(1.01);
+    border-color:#38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,0.18);
+}
+
+.home-botoes button span{
+    font-size:14px;
+    font-weight:400;
+    line-height:1.55;
+    color:#cbd5e1;
+}
+
+/* ===== AÇÕES CONTEÚDO ===== */
+
+.acoes-conteudo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    margin-top:40px;
+}
+
+/* ===== BOTÕES GRANDES ===== */
+
+.btn-grande{
+    width:100%;
+    max-width:420px;
+    padding:15px 18px;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:16px;
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+
+.voltar{
+    background:#334155;
+    color:white;
+}
+
+.voltar:hover{
+    background:#475569;
+}
+
+/* ===== BOTÕES FINAIS QUIZ ===== */
+
+.botoes-finais{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    margin-top:24px;
+    width:100%;
+}
+
+.botoes-finais button{
+    width:100%;
+    max-width:260px;
+    padding:12px 14px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* ===== TABELAS ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:16px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+th,
+td{
+    padding:12px;
+    border:1px solid #334155;
+    font-size:14px;
+}
+
+th{
+    background:#0f172a;
+    color:#38bdf8;
+}
+
+td{
+    background:#1e293b;
+}
+
+/* ===== SCROLL ===== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:600px){
+
+    body{
+        padding:10px;
+    }
+
+    .container{
+        max-width:100%;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    h3{
+        font-size:17px;
+    }
+
+    .home-card{
+        padding:18px;
+        border-radius:18px;
+    }
+
+    .home-botoes{
+        gap:14px;
+    }
+
+    .home-botoes button{
+        padding:16px;
+        font-size:18px;
+        border-radius:16px;
+    }
+
+    .home-botoes button span{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .card{
+        padding:16px;
+    }
+
+    .pergunta{
+        padding:14px;
+    }
+
+    .alternativa{
+        padding:11px;
+        font-size:13px;
+        border-radius:10px;
+    }
+
+    .btn-grande{
+        max-width:100%;
+        font-size:14px;
+        padding:13px;
+    }
+
+    .botoes-finais button{
+        max-width:100%;
+    }
+
+    th,
+    td{
+        padding:9px;
+        font-size:12px;
+    }
+}
+
+@media(max-width:380px){
+
+    body{
+        padding:8px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+    .home-card{
+        padding:14px;
+    }
+
+    .home-botoes button{
+        font-size:16px;
+        padding:14px;
+    }
+
+    .home-botoes button span{
+        font-size:12px;
+    }
+
+    .pergunta{
+        padding:12px;
+    }
+
+    .alternativa{
+        font-size:12px;
+        padding:10px;
+        gap:8px;
+    }
+
+    .tema,
+    .dificuldade{
+        font-size:11px;
+        padding:4px 8px;
+    }
+}

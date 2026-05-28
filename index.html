@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M2 Estudos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="home-container">
+
+  <div class="home-card">
+
+    <h1>📚 Estudos M2</h1>
+
+    <p class="descricao">
+      Plataforma de estudos desenvolvida para revisão da segunda prova do semestre (M2) da disciplina de Redes e Segurança da Informação.
+      Escolha abaixo qual área deseja estudar.
+    </p>
+
+    <div class="home-botoes">
+
+      <button onclick="abrirConteudo(1)">
+
+        🐳 Parte 1 — Virtualização e Cloud
+
+        <span>
+
+          • Virtualização e Máquinas Virtuais (VM)<br>
+          • Hypervisor Tipo 1 e Tipo 2<br>
+          • ISA, VMM e Time Sharing<br>
+          • Mainframe e processamento corporativo<br>
+          • Docker e Containers<br>
+          • Docker Compose e Docker Swarm<br>
+          • Dockerfile, Imagens, Volumes e Registry<br>
+          • Comandos Docker<br>
+          • Cloud Computing<br>
+          • IaaS, PaaS, SaaS e FaaS
+
+        </span>
+
+      </button>
+
+      <button onclick="abrirConteudo(2)">
+
+        🔒 Parte 2 — Segurança da Informação
+
+        <span>
+
+          • Tríade CID<br>
+          • Confidencialidade, Integridade e Disponibilidade<br>
+          • Criptografia Simétrica e Assimétrica<br>
+          • Hash e Certificados Digitais<br>
+          • Pentest e Engenharia Social<br>
+          • Malware, Ransomware e Phishing<br>
+          • Vulnerabilidade, Ameaça e Risco<br>
+          • Gestão de Riscos<br>
+          • Controle Físico e Lógico<br>
+          • ISO 27000, 27001, 27002, 27003 e 27005
+
+        </span>
+
+      </button>
+
+      <button onclick="abrirConteudo(3)">
+
+        ⚖️ Parte 3 — LGPD, Linux e Sistemas
+
+        <span>
+
+          • LGPD e Proteção de Dados<br>
+          • Dados Pessoais e Sensíveis<br>
+          • ANPD e Marco Civil da Internet<br>
+          • Neutralidade da Rede<br>
+          • Linux e Kernel<br>
+          • Shell, Bash e GNU<br>
+          • Sistema de Arquivos Linux<br>
+          • Permissões e chmod<br>
+          • Processos, Threads e Escalonamento<br>
+          • Round Robin, FIFO e Swap
+
+        </span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+function abrirConteudo(parte){
+
+    localStorage.setItem("parteSelecionada", parte)
+
+    window.location.href = "conteudo.html"
+
+}
+
+</script>
+
+</body>
+</html>
