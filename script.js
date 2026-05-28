@@ -1054,6 +1054,176 @@ Volume permanece.
 </p>
 
 </div>
+
+<div class="card">
+
+<h2>🔥 Cola Mental — Parte 1</h2>
+
+<ul>
+
+<li>
+<b>Virtualização</b> → permite criar ambientes virtuais independentes no mesmo hardware
+</li>
+
+<li>
+<b>VM (Máquina Virtual)</b> → possui sistema operacional e kernel próprios
+</li>
+
+<li>
+<b>Container</b> → compartilha o kernel do host
+</li>
+
+<li>
+<b>Docker</b> → plataforma de conteinerização
+</li>
+
+<li>
+<b>Hypervisor</b> → gerencia máquinas virtuais
+</li>
+
+<li>
+<b>Hypervisor Tipo 1</b> → roda direto no hardware
+</li>
+
+<li>
+<b>Hypervisor Tipo 2</b> → roda sobre sistema operacional
+</li>
+
+<li>
+<b>VMM</b> → outro nome para Hypervisor
+</li>
+
+<li>
+<b>Mainframe</b> → processamento corporativo massivo e alta disponibilidade
+</li>
+
+<li>
+<b>Time Sharing</b> → compartilhamento do tempo da CPU
+</li>
+
+<li>
+<b>ISA</b> → interface entre software e hardware
+</li>
+
+<li>
+<b>Dispatcher</b> → redireciona instruções da VM
+</li>
+
+<li>
+<b>Allocator</b> → distribui recursos para VMs
+</li>
+
+<li>
+<b>Interpreter</b> → interpreta instruções privilegiadas
+</li>
+
+<li>
+<b>Overhead</b> → consumo extra causado pela virtualização
+</li>
+
+<li>
+<b>Cloud Computing</b> → entrega recursos computacionais pela internet
+</li>
+
+<li>
+<b>IaaS</b> → infraestrutura como serviço
+</li>
+
+<li>
+<b>PaaS</b> → plataforma para desenvolvimento
+</li>
+
+<li>
+<b>SaaS</b> → software pronto via internet
+</li>
+
+<li>
+<b>FaaS</b> → execução de funções sob demanda
+</li>
+
+<li>
+<b>Docker Compose</b> → gerencia múltiplos containers
+</li>
+
+<li>
+<b>docker-compose.yml</b> → arquivo principal do Compose
+</li>
+
+<li>
+<b>Docker Swarm</b> → orquestração de containers em cluster
+</li>
+
+<li>
+<b>Manager</b> → coordena cluster Swarm
+</li>
+
+<li>
+<b>Worker</b> → executa containers no Swarm
+</li>
+
+<li>
+<b>Imagem Docker</b> → modelo usado para criar containers
+</li>
+
+<li>
+<b>Container</b> → instância em execução da imagem
+</li>
+
+<li>
+<b>Dockerfile</b> → arquivo com instruções para criar imagens
+</li>
+
+<li>
+<b>docker build</b> → cria imagem
+</li>
+
+<li>
+<b>docker run</b> → executa container
+</li>
+
+<li>
+<b>docker ps</b> → lista containers ativos
+</li>
+
+<li>
+<b>docker stop</b> → para container
+</li>
+
+<li>
+<b>docker rm</b> → remove container
+</li>
+
+<li>
+<b>docker pull</b> → baixa imagens
+</li>
+
+<li>
+<b>docker exec</b> → executa comando dentro do container
+</li>
+
+<li>
+<b>Tag</b> → versão/rótulo da imagem
+</li>
+
+<li>
+<b>Registry</b> → serviço que armazena imagens Docker
+</li>
+
+<li>
+<b>Docker Hub</b> → principal registry Docker
+</li>
+
+<li>
+<b>Volume</b> → armazenamento persistente
+</li>
+
+<li>
+<b>Host</b> → máquina principal que executa VMs ou containers
+</li>
+
+</ul>
+
+</div>
 `,
 
 2: `
